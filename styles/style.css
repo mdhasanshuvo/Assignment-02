@@ -3,6 +3,12 @@
 @import url('https://fonts.cdnfonts.com/css/miama');
 
 /* shared font styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -11,6 +17,211 @@
         "slnt" 0;
 }
 
-.miama-font{
+.miama-font {
     font-family: 'Miama', sans-serif;
+}
+
+.display_flex {
+    display: flex;
+}
+
+.btn_primary {
+    padding: 1rem 2.5rem;
+    background-color: #E6533C;
+    border-radius: 2.5rem;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+}
+
+/* header styles */
+header {
+    background: linear-gradient(10deg, #111 0%, rgb(119, 119, 119) 300%);
+}
+
+/* navigation related styles */
+.nav_container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #E6533C;
+}
+
+.nav ul {
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    border-radius: 2.4375rem;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.nav ul li {
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.nav ul li:last-child {
+    margin-right: 0.7rem;
+}
+
+.nav ul .home {
+    font-weight: 500;
+    border-radius: 2.4375rem;
+    background-color: #E6533C;
+    padding: 0.5rem 1.25rem;
+    margin: 0.1rem;
+}
+
+.fa-bars {
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+}
+
+/* banner related styles */
+.banner_container {
+    max-width: 1060px;
+    margin: 0 auto;
+    gap: 160px;
+}
+
+.banner_info {
+    max-width: 520px;
+    margin: auto;
+}
+
+.banner_info h2,
+.banner_info span {
+    font-size: 4.5rem;
+    color: white;
+    font-weight: 900;
+    line-height: 4rem;
+}
+
+.banner_info span {
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+.banner_info p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.50);
+    margin: 1.5rem 0;
+    line-height: 1.5rem;
+    letter-spacing: 0.03125rem;
+}
+.download {
+    margin-left: 1rem;
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
+
+.extra {
+    max-width: max-content;
+    padding: 15px 19px;
+    align-items: center;
+    gap: 0.7rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(48, 48, 48, 0.319);
+    backdrop-filter: blur(10px);
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #E6533C;
+}
+
+.extra h3 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #FAFAF9;
+}
+
+.extra p {
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(239, 237, 232, 0.65);
+}
+
+.banner_img {
+    position: relative;
+}
+
+.banner_img img {
+    width: 100%;
+}
+
+.extra1 {
+    position: absolute;
+    bottom: 4rem;
+    left: -6rem;
+}
+
+.extra2 {
+    position: absolute;
+    top: 7rem;
+    right: -4rem;
+    padding: 17px 22px;
+}
+
+/* responsive mobile */
+@media screen and (max-width:576px) {
+    .nav_container{
+        width: 95%;
+    }
+    .banner_container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .banner_info {
+        margin: 1.25rem;
+    }
+
+    .banner_info h2,
+    .banner_info span {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+    .banner_info span{
+        font-size: 3.5rem;
+    }
+    .btn_primary{
+        width: 46%;
+        padding: 1rem 2%;
+    }
+    .list {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+    }
+    .extra{
+        padding: 12px 13px;
+    }
+    .extra1{
+        bottom: 16rem;
+        left: 1rem;
+    }
+    .extra2{
+        top: 4rem;
+        right: 1rem;
+    }
 }
