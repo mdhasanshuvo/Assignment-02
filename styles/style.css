@@ -36,8 +36,21 @@
     font-weight: 500;
 }
 
+.title_primary{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+
+.description_primary{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.50);
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
 /* body style */
-body{
+body {
     background-color: #000;
     color: white;
 }
@@ -130,6 +143,7 @@ header {
     line-height: 1.5rem;
     letter-spacing: 0.03125rem;
 }
+
 .download {
     margin-left: 1rem;
     background-color: transparent;
@@ -189,61 +203,61 @@ header {
 }
 
 /* habit styles */
-.habit{
+.habit {
     max-width: 1044px;
     margin: 80px auto;
 }
-.habit_info{
+
+.habit_info {
     text-align: center;
     width: 80%;
     margin: 0 auto;
     gap: 0.8rem;
     margin-bottom: 3rem;
 }
-.habit_title{
-    font-size: 3rem;
-    font-weight: 900;
-    color: white;
+
+.habit_title {
     margin-bottom: 1rem;
 }
-.habit_descriptions{
-    margin: 0 1rem;
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.50);
-    line-height: 24px;
-    letter-spacing: 0.3px;
+
+.habit_descriptions {
+    margin: 0 12%;
 }
-.habit_img_containers{
+
+.habit_img_containers {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
 }
-.habit_img_container{
+
+.habit_img_container {
     text-align: center;
 }
-.habit_img{
+
+.habit_img {
     height: 180px;
     border-radius: 50%;
     margin-bottom: 2rem;
 }
-.habit_img_title{
+
+.habit_img_title {
     font-size: 1.2rem;
     font-weight: 700;
 }
-.habit_img_description{
-    color: rgba(255, 255, 255, 0.50);
-    font-size: 0.8rem;
-    line-height: 1rem;
-    letter-spacing: 0.3px;
+
+.habit_img_description {
     padding: 0.5rem 0.7rem;
 }
 
 
+
+
 /* responsive mobile */
 @media screen and (max-width:576px) {
-    .nav_container{
+    .nav_container {
         width: 95%;
     }
+
     .banner_container {
         flex-direction: column;
         gap: 3rem;
@@ -253,7 +267,7 @@ header {
         margin: 1.25rem;
     }
 
-    .banner_info div{
+    .banner_info div {
         margin: 1.5rem 0 2rem;
     }
 
@@ -262,91 +276,112 @@ header {
         font-size: 2.5rem;
         line-height: 2.8rem;
     }
-    .banner_info p{
-        margin: 4rem auto;
+
+    .banner_info p {
+        margin: 2.5rem auto;
     }
-    .banner_info span{
+
+    .banner_info span {
         font-size: 3.5rem;
     }
-    .banner_img{
-        height: 65vh;
-        overflow: hidden;
+
+    .banner_img img {
+        height: 60vh;
+        object-fit: cover;
+        object-position: 25% 10%;
     }
-    .btn_primary{
+
+    .btn_primary {
         width: 46%;
         padding: 1rem 2%;
     }
+
     .list {
         display: none;
     }
+
     .fa-bars {
         display: block;
     }
-    .extra{
+
+    .extra {
         padding: 12px 13px;
     }
-    .extra1{
+
+    .extra1 {
         bottom: 11rem;
         left: 1rem;
     }
-    .extra2{
+
+    .extra2 {
         top: 4rem;
         right: 1rem;
     }
-    .habit_descriptions{
-        font-size: 1.3rem;
+
+    .habit_descriptions {
+        margin: auto 5%;
     }
-    .habit_img_containers{
-        grid-template-columns: repeat(1,1fr);
+
+    .habit_title {
+        font-size: 2rem;
     }
-    .habit_img_container{
+
+    .habit_img_containers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .habit_img_container {
         margin-bottom: 5rem;
     }
-    .habit_img{
-        height: 80%;
+
+    .habit_img {
+        height: 70%;
     }
-    .habit_img_title{
-        font-size: 1.5rem;
-    }
-    .habit_img_description{
-        font-size: 1.2rem;
+
+    .habit_img_description {
         margin-left: 20%;
         margin-right: 20%;
-        line-height: 1.2rem;
     }
-
 }
 
+/* responsive for tab */
 @media screen and (min-width:576px) and (max-width:996px) {
-    .nav_container{
+    .nav_container {
         width: 90%;
     }
+
     .banner_container {
         flex-direction: column;
         gap: 4rem;
         width: 80%;
     }
-    .banner_info{
+
+    .banner_info {
         margin-top: 3rem;
     }
-    .banner_img img{
+
+    .banner_img img {
         width: 70%;
         margin: 0 15%;
     }
-    .extra1{
+
+    .extra1 {
         bottom: 10rem;
         left: 4rem;
         padding: 26px 30px;
     }
-    .extra2{
+
+    .extra2 {
         top: 15rem;
         right: 7rem;
         padding: 26px 30px;
     }
-    .habit_descriptions{
+
+    .habit_descriptions {
         width: 90%;
     }
-    .habit_img_containers{
-        grid-template-columns: repeat(2,1fr);
+
+    .habit_img_containers {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
