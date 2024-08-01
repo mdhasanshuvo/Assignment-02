@@ -788,6 +788,11 @@ footer {
     .exercise_img_container6 {
         display: none;
     }
+    .exercise_img_description {
+        top: 75%;
+        font-size: 0.6rem;
+        font-weight: 300;
+    }
 
 
 
