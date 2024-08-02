@@ -331,7 +331,7 @@ header {
 .exercise_img_description {
     position: absolute;
     color: #FFF;
-    top: 170px;
+    top: 70%;
     left: 20px;
     font-weight: normal;
     font-size: 0.9rem;
@@ -789,9 +789,10 @@ footer {
         display: none;
     }
     .exercise_img_description {
-        top: 75%;
+        top: 70%;
         font-size: 0.6rem;
         font-weight: 300;
+        left: 5%;
     }
 
 
