@@ -566,6 +566,62 @@ header {
 }
 
 
+/* package related styles */
+.package {
+    max-width: 1060px;
+    margin: 0 auto 75px;
+}
+.package_card_container{
+    gap: 5%;
+    margin-top: 30px;
+}
+.package_card{
+    width: 30%;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.monthly{
+    background-color: rgba(255, 255, 255, 0.224);
+    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.224);
+}
+.package_card h2,
+.package_card h3{
+    text-transform: uppercase;
+    color: #FAFAF9;
+}
+.package_card hr{
+    margin: 6px 0;
+    height: 0px;
+}
+.plan{
+    margin: 0 0 10px;
+}
+.package_card div{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.package_card i{
+    color: #cecece;
+    font-size: 17px;
+}
+.Choose_Package{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border-radius: 2px;
+}
+.monthly .Choose_Package{
+    background-color:#e14831;
+    box-shadow: 0 0 1px #e14831;
+}
+
+
+
+
 /* Footer related styles */
 footer {
     background-color: #191919;
@@ -845,6 +901,32 @@ footer {
 
 
 
+    .package{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .package_title{
+        font-size: 32px;
+        text-align: center;
+    }
+    .package_card_container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .package_card{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .Choose_Package{
+        width: 100%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
     .footer_contents,
     .get_started_container{
         flex-direction: column;
@@ -862,6 +944,10 @@ footer {
     .get_started_container {
         gap: 30px;
     }
+
+
+
+
 
 }
 
@@ -883,7 +969,7 @@ footer {
 
 
 /* responsive for tab */
-@media screen and (min-width:576px) and (max-width:996px) {
+@media screen and (min-width:576px) and (max-width:992px) {
     .nav_container {
         width: 90%;
     }
@@ -974,9 +1060,20 @@ footer {
 
     .bmi_container,
     .team,
-    .inner_footer {
+    .inner_footer,
+    .package {
         margin-left: 3%;
         margin-right: 3%;
+    }
+
+    .package_card_container{
+        gap: 2%;
+    }
+    .package_card{
+        width: 32%;
+    }
+    .Choose_Package{
+        padding: 1rem;
     }
 
     .footer_contents{
